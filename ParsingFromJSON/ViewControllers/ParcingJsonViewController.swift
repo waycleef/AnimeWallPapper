@@ -7,9 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ParcingJsonViewController: UIViewController {
     
-    let waifuUrl = "https://api.waifu.im/search/?included_tags=selfies"
+    private let waifuUrl = "https://api.waifu.im/search/?included_tags=selfies"
     
     @IBAction func checkApiAction() {
         getWaifuInfo()
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
 }
 
 // MARK: - Networking
-extension ViewController {
+extension ParcingJsonViewController {
     private func getWaifuInfo() {
         guard let url = URL(string: waifuUrl) else { return }
         
