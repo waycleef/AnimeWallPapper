@@ -27,9 +27,9 @@ class ImageAndInfoViewController: UIViewController {
         NetworkManager.shared.fetch(AnimeModel.self, from: animeUrl) { [weak self] result in
             switch result {
             case .success(let animeInfo):
-                guard let firstImage = animeInfo.images.first else { return }
-                self?.animeInfoLabel.text = firstImage.description
-                completion(firstImage)
+                guard let animeImage = animeInfo.images.first else { return }
+                self?.animeInfoLabel.text = animeImage.description
+                completion(animeImage)
             case .failure(let error):
                 print(error)
             }
