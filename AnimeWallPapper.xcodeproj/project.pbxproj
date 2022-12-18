@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		5F1D0C4F2948984200EACCB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1D0C4E2948984200EACCB9 /* AppDelegate.swift */; };
 		5F1D0C512948984200EACCB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1D0C502948984200EACCB9 /* SceneDelegate.swift */; };
-		5F1D0C532948984200EACCB9 /* ParcingJsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1D0C522948984200EACCB9 /* ParcingJsonViewController.swift */; };
+		5F1D0C532948984200EACCB9 /* AnimeWallPapperDowloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1D0C522948984200EACCB9 /* AnimeWallPapperDowloader.swift */; };
 		5F1D0C562948984200EACCB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F1D0C542948984200EACCB9 /* Main.storyboard */; };
 		5F1D0C582948984300EACCB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F1D0C572948984300EACCB9 /* Assets.xcassets */; };
 		5F1D0C5B2948984300EACCB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F1D0C592948984300EACCB9 /* LaunchScreen.storyboard */; };
 		5F3752862948A90C00CBC819 /* AnimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3752852948A90C00CBC819 /* AnimeModel.swift */; };
+		5F4A47A7294C79A1000BE7C1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4A47A6294C79A1000BE7C1 /* NetworkManager.swift */; };
+		5F4A47A9294CCC41000BE7C1 /* ImageAndInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4A47A8294CCC41000BE7C1 /* ImageAndInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5F1D0C4B2948984200EACCB9 /* ParsingFromJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParsingFromJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F1D0C4E2948984200EACCB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F1D0C502948984200EACCB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5F1D0C522948984200EACCB9 /* ParcingJsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcingJsonViewController.swift; sourceTree = "<group>"; };
+		5F1D0C522948984200EACCB9 /* AnimeWallPapperDowloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeWallPapperDowloader.swift; sourceTree = "<group>"; };
 		5F1D0C552948984200EACCB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F1D0C572948984300EACCB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F1D0C5A2948984300EACCB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F1D0C5C2948984300EACCB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F3752852948A90C00CBC819 /* AnimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeModel.swift; sourceTree = "<group>"; };
+		5F4A47A6294C79A1000BE7C1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5F4A47A8294CCC41000BE7C1 /* ImageAndInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAndInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +46,7 @@
 		5F1D0C422948984200EACCB9 = {
 			isa = PBXGroup;
 			children = (
-				5F1D0C4D2948984200EACCB9 /* ParsingFromJSON */,
+				5F1D0C4D2948984200EACCB9 /* AnimeWallPapper */,
 				5F1D0C4C2948984200EACCB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,16 +59,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5F1D0C4D2948984200EACCB9 /* ParsingFromJSON */ = {
+		5F1D0C4D2948984200EACCB9 /* AnimeWallPapper */ = {
 			isa = PBXGroup;
 			children = (
+				5F4A47A5294C797B000BE7C1 /* Services */,
 				5F1D0C6629489EB200EACCB9 /* Model */,
 				5F1D0C6229489E6500EACCB9 /* App */,
 				5F1D0C6429489E9500EACCB9 /* ViewControllers */,
 				5F1D0C6329489E8800EACCB9 /* StoryBoards */,
 				5F1D0C6529489EA100EACCB9 /* Resources */,
 			);
-			path = ParsingFromJSON;
+			path = AnimeWallPapper;
 			sourceTree = "<group>";
 		};
 		5F1D0C6229489E6500EACCB9 /* App */ = {
@@ -89,7 +94,8 @@
 		5F1D0C6429489E9500EACCB9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5F1D0C522948984200EACCB9 /* ParcingJsonViewController.swift */,
+				5F1D0C522948984200EACCB9 /* AnimeWallPapperDowloader.swift */,
+				5F4A47A8294CCC41000BE7C1 /* ImageAndInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -108,6 +114,14 @@
 				5F3752852948A90C00CBC819 /* AnimeModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5F4A47A5294C797B000BE7C1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5F4A47A6294C79A1000BE7C1 /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +159,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5F1D0C462948984200EACCB9 /* Build configuration list for PBXProject "ParsingFromJSON" */;
+			buildConfigurationList = 5F1D0C462948984200EACCB9 /* Build configuration list for PBXProject "AnimeWallPapper" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -181,8 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F1D0C532948984200EACCB9 /* ParcingJsonViewController.swift in Sources */,
+				5F1D0C532948984200EACCB9 /* AnimeWallPapperDowloader.swift in Sources */,
 				5F1D0C4F2948984200EACCB9 /* AppDelegate.swift in Sources */,
+				5F4A47A9294CCC41000BE7C1 /* ImageAndInfoViewController.swift in Sources */,
+				5F4A47A7294C79A1000BE7C1 /* NetworkManager.swift in Sources */,
 				5F3752862948A90C00CBC819 /* AnimeModel.swift in Sources */,
 				5F1D0C512948984200EACCB9 /* SceneDelegate.swift in Sources */,
 			);
@@ -333,7 +349,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4RJ3J5RA5L;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ParsingFromJSON/App/Info.plist;
+				INFOPLIST_FILE = AnimeWallPapper/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -364,7 +380,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4RJ3J5RA5L;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ParsingFromJSON/App/Info.plist;
+				INFOPLIST_FILE = AnimeWallPapper/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -389,7 +405,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5F1D0C462948984200EACCB9 /* Build configuration list for PBXProject "ParsingFromJSON" */ = {
+		5F1D0C462948984200EACCB9 /* Build configuration list for PBXProject "AnimeWallPapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F1D0C5D2948984300EACCB9 /* Debug */,

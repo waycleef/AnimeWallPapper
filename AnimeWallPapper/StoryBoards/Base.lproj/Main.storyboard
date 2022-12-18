@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jer-QI-SAI">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Anime Wall Papper Dowloader-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AnimeWallPapperDowloader" customModule="ParsingFromJSON" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQg-dW-hqb">
+                                <rect key="frame" x="62.5" y="292" width="250" height="83"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="jzX-rO-UGv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="uZ9-pv-doS"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Check API"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="checkApiAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="FnC-R5-j4i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HQg-dW-hqb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4ll-A7-pf7"/>
+                            <constraint firstItem="HQg-dW-hqb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ySq-w5-dTo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VgU-Tk-YTP"/>
+                    <connections>
+                        <segue destination="Zgr-k3-osN" kind="show" identifier="animeWallPapper" id="0Wg-BZ-ER2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727" y="-35"/>
+        </scene>
+        <!--Image And Info View Controller-->
+        <scene sceneID="W58-E3-nxS">
+            <objects>
+                <viewController id="Zgr-k3-osN" customClass="ImageAndInfoViewController" customModule="ParsingFromJSON" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pNl-sM-7mt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ZJD-as-yQB">
+                                <rect key="frame" x="177.5" y="267.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AUc-vl-Buy">
+                                <rect key="frame" x="16" y="44" width="343" height="623"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wej-Sc-0cz">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="466.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHL-xQ-JtU">
+                                        <rect key="frame" x="0.0" y="476.5" width="343" height="146.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eEz-Cw-vCa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZJD-as-yQB" firstAttribute="centerX" secondItem="Wej-Sc-0cz" secondAttribute="centerX" id="7Be-kn-UNv"/>
+                            <constraint firstItem="eEz-Cw-vCa" firstAttribute="trailing" secondItem="AUc-vl-Buy" secondAttribute="trailing" constant="16" id="AAB-mH-n9i"/>
+                            <constraint firstItem="AUc-vl-Buy" firstAttribute="leading" secondItem="pNl-sM-7mt" secondAttribute="leading" constant="16" id="cFZ-DS-6OW"/>
+                            <constraint firstItem="ZJD-as-yQB" firstAttribute="centerY" secondItem="Wej-Sc-0cz" secondAttribute="centerY" id="jmi-sO-ucR"/>
+                            <constraint firstItem="AUc-vl-Buy" firstAttribute="top" secondItem="eEz-Cw-vCa" secondAttribute="top" id="tPt-Rg-EFL"/>
+                            <constraint firstItem="eEz-Cw-vCa" firstAttribute="bottom" secondItem="AUc-vl-Buy" secondAttribute="bottom" id="x3b-wk-hW1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VZb-9e-ug9"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ZJD-as-yQB" id="nku-oB-1rA"/>
+                        <outlet property="animeImage" destination="Wej-Sc-0cz" id="LVq-ax-zPi"/>
+                        <outlet property="animeInfoLabel" destination="aHL-xQ-JtU" id="BSl-QN-AcE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bZz-pi-YZL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1541.5999999999999" y="-35.532233883058474"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wf4-nl-HYc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jer-QI-SAI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jD4-ey-fxH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HPR-nJ-vhr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dQS-BD-iDh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.244274809160306" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
