@@ -7,7 +7,7 @@
 
 import Foundation
 
-let animeUrl = "https://api.waifu.im/search/?included_tags=selfies"
+let animeUrl = "https://api.waifu.im/search/?included_tags=ass"
 
 enum NetworkError: Error {
     case invalidURL
